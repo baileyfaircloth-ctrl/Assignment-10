@@ -347,3 +347,6 @@ app.listen(PORT, () => {
     console.log(`Environment: ${process.env.NODE_ENV}`);
     console.log(`Health check: http://localhost:${PORT}/health`);
 });
+const PORT = process.env.PORT || 3000;
+const cors = require('cors');
+app.use(cors());
